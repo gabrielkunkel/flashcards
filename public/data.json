@@ -3,6 +3,7 @@
     {
       "id": 1,
       "title": "React",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
       "cards":
       [
         {
@@ -25,6 +26,7 @@
     {
       "id": 2,
       "title": "C#",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/C_Sharp_logo.png",
       "cards":
       [
         {
