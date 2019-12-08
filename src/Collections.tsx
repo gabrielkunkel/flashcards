@@ -17,7 +17,7 @@ export default function CollectionList (props: { collections: Collection[]} ) {
                   <GridListTileBar
                     title={col.title}
                     actionIcon={
-                    <IconButton aria-label={`star ${col.title}`}>
+                    <IconButton aria-label={`select ${col.title}`}>
                         <LaunchIcon />
                     </IconButton>
               }
@@ -25,7 +25,6 @@ export default function CollectionList (props: { collections: Collection[]} ) {
               </GridListTile>
           ))}
       </GridList>
-
     </div>
   );
 }
