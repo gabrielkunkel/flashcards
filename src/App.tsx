@@ -48,14 +48,22 @@ const App: React.FC = (): JSX.Element => {
     return working[working.length-1].id + 1;
   }
 
+  const updateCollections = (updatedCollection: Collection): void => {
+    let working: Collection[] = [...collections];
+    let index: number = working.indexOf(activeCollection);
+    let workingLeft: Collection[] = working.slice(0, index);
+    let workingRight: Collection[] = working.slice(index + 1, working.length);
+    let finalWorking: Collection[] = [...workingLeft, updatedCollection, ...workingRight];
+    setCollections(finalWorking);
+  }
+
   const addCardToDatabase = (updatedCollection: Collection): void => {
     axios.put('http://localhost:3000/collections/' + activeCollection.id, updatedCollection)
       .then(response => {
-        console.log("response received: ", response);
-        // do I need to update the state?
-        // do I need to reset the form?
-        // setShowNewCardForm(false);
-        //  setNewCardFormObject(initialCard);
+        setShowNewCardForm(false);
+        setNewCardFormObject(initialCard);
+        setActiveCollection(response.data);
+        updateCollections(response.data);
     });
   }
 
@@ -72,9 +80,7 @@ const App: React.FC = (): JSX.Element => {
 
     let updatedCollection = Object.assign({}, activeCollection, { cards: [...activeCollection.cards, newCardToAdd] });
 
-    addCardToDatabase(updatedCollection);
-    // setActiveCollection(updatedCollection);
-    
+    addCardToDatabase(updatedCollection);    
     return false;
   }
 

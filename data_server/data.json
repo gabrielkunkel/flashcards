@@ -19,116 +19,6 @@
           "id": 3,
           "word": "component",
           "definition": "Reusable building blocks for UI using JSX"
-        },
-        {
-          "id": 4,
-          "word": "A Word",
-          "definition": "A Word Definition"
-        },
-        {
-          "id": 5,
-          "word": "React word.",
-          "definition": "Another react definition."
-        },
-        {
-          "id": 6,
-          "word": "React Words",
-          "definition": "React Words Def"
-        },
-        {
-          "id": 7,
-          "word": "Eat",
-          "definition": "React synonym for \"fasting\""
-        },
-        {
-          "id": 8,
-          "word": "Here",
-          "definition": "A place"
-        },
-        {
-          "id": 9,
-          "word": "Doh!",
-          "definition": "A deer."
-        },
-        {
-          "id": 10,
-          "word": "Dead",
-          "definition": "a word for uncomfortable"
-        },
-        {
-          "id": 11,
-          "word": "next word",
-          "definition": "next word definition"
-        },
-        {
-          "id": 12,
-          "word": "delete",
-          "definition": "what you'll do with this card"
-        },
-        {
-          "id": 13,
-          "word": "why",
-          "definition": "this keeps refreshing bullshit"
-        },
-        {
-          "id": 14,
-          "word": "Moron",
-          "definition": "a person that uses his hands to cut down a tree"
-        },
-        {
-          "id": 15,
-          "word": "example ",
-          "definition": "exapmle def"
-        },
-        {
-          "id": 16,
-          "word": "hnhsnhsnt",
-          "definition": "word def"
-        },
-        {
-          "id": 17,
-          "word": "test me",
-          "definition": "test me again"
-        },
-        {
-          "id": 18,
-          "word": "test me still",
-          "definition": "test me more"
-        },
-        {
-          "id": 19,
-          "word": "douche axios",
-          "definition": "axios is not my brother"
-        },
-        {
-          "id": 20,
-          "word": "more test",
-          "definition": "test"
-        },
-        {
-          "id": 21,
-          "word": "test",
-          "definition": "test again"
-        },
-        {
-          "id": 22,
-          "word": "test",
-          "definition": "test me"
-        },
-        {
-          "id": 23,
-          "word": "run me",
-          "definition": "run test"
-        },
-        {
-          "id": 24,
-          "word": "this was super crazy",
-          "definition": "yes it was"
-        },
-        {
-          "id": 25,
-          "word": "test",
-          "definition": "test"
         }
       ]
     },
@@ -151,11 +41,6 @@
           "id": 3,
           "word": "object",
           "definition": "Instance of a class"
-        },
-        {
-          "id": 4,
-          "word": "Alex",
-          "definition": "Is an awesome coder."
         }
       ]
     }
