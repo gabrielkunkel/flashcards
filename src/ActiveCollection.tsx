@@ -1,6 +1,6 @@
 import React from 'react';
 import collection from "./Models/collection";
-import CurrentCard from "./CurrentCard";
+import CardWrapper from "./CardWrapper";
 import NewCardForm from "./NewCardForm";
 
 export interface IActiveCollectionProps {
@@ -14,7 +14,7 @@ export interface IActiveCollectionProps {
 export default function ActiveCollection (props: IActiveCollectionProps) {  
   return (
     <div>
-      <CurrentCard />
+      <CardWrapper activeCollection={props.activeCollection}/>
       { props.showNewCardForm ? <NewCardForm 
         addACardToCurrentCollection={props.addACardToCurrentCollection}
         mergeNewCardFormObject={props.mergeNewCardFormObject}

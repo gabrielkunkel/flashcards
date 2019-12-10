@@ -26,7 +26,7 @@ const App: React.FC = (): JSX.Element => {
 
   const [collections, setCollections] = useState<Collection[]>([]);
   const [activeCollection, setActiveCollection] = useState<Collection>(initialCollection);
-  // const [currentCard, setCurrentCard] = useState<Card>(initialCard); 
+
   const [showNewCardForm, setShowNewCardForm] = useState<boolean>(false);
   const [newCardFormObject, setNewCardFormObject] = useState<Card>(initialCard);
 
