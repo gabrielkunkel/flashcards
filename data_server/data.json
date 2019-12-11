@@ -19,6 +19,11 @@
           "id": 3,
           "word": "component",
           "definition": "Reusable building blocks for UI using JSX"
+        },
+        {
+          "id": 4,
+          "word": "Higher-Order Component",
+          "definition": "A function that takes in a component and returns a new component."
         }
       ]
     },

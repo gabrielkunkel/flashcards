@@ -1,10 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './App.scss';
-
 import Collection from './Models/collection';
 import Card from './Models/card';
-
 import Container from '@material-ui/core/Container';
 import Collections from './Collections';
 import ActiveCollection from "./ActiveCollection";
@@ -26,7 +24,6 @@ const App: React.FC = (): JSX.Element => {
 
   const [collections, setCollections] = useState<Collection[]>([]);
   const [activeCollection, setActiveCollection] = useState<Collection>(initialCollection);
-
   const [showNewCardForm, setShowNewCardForm] = useState<boolean>(false);
   const [newCardFormObject, setNewCardFormObject] = useState<Card>(initialCard);
 
@@ -90,8 +87,8 @@ const App: React.FC = (): JSX.Element => {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
       </header>
       <Container>
         <Collections 
@@ -99,6 +96,7 @@ const App: React.FC = (): JSX.Element => {
           setActiveCollection={switchActiveCollection} 
           activeCollection={activeCollection} 
         />
+        <br />
         { activeCollection.id !== 0 ? 
           <ActiveCollection 
             activeCollection={activeCollection}
